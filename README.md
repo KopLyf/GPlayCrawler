@@ -24,4 +24,4 @@
 
 
 ## Usage:
-shell command: scrapy crawl Google
+shell command: scrapy crawl google
