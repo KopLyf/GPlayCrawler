@@ -1,10 +1,26 @@
-Requirements:
-MongoDB: sudo apt-get install mongodb
-Scrapy:  pip install scrapy
-Scrapy-mongodb: pip install scrapy-mongodb
+## A crawler based on Scrapy used to crawl App's information in Google Play
 
-shell commands:
-cd /path/to/AppCrawler-masterR/app
-scrapy crawl google -s JOBDIR=app/jobs
+Results include information below:
+* Url
+* App'ID
+* Score
+* Publish Date
+* File Size
+* Number of Downloads
+* Software Version
+* Pperating Systems
+* Content Rating
+* Thumbs
+* Icon
+* Description
+* Reviews(include author, date, content and rating)
+* Permissions
 
--s JOBDIR=app/jobs: save crawled pages to directory app/jobs, if interepted, continue from where stop
+## Requirements:
+* MongoDB 3.4
+* Python 2.7
+* Scrapy 1.3
+
+
+## Usage:
+shell command: scrapy crawl Google
