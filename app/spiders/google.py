@@ -95,6 +95,8 @@ class GoogleSpider(CrawlSpider):
 
         pageNum = response.meta['pageNum'] + 1
         url = response.meta['url']
+        #note that every page gets at most 40 reviews
+        #reviewSortOrder = 4 means helpfulness reviews
         if item['continued'] and pageNum < 3:
             formdata = {"id":item['appid'], "reviewType":'0', "reviewSortOrder":'4', "pageNum":str(pageNum), "xhr":'1'}
             yield FormRequest(url, callback=self.parse_review, formdata=formdata, meta={'item':item, 'pageNum':pageNum, 'url':url})
