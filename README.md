@@ -1,6 +1,6 @@
-## A crawler based on Scrapy used to crawl App's information in Google Play
+# A crawler based on Scrapy used to crawl App's information in Google Play
 
-Results include information below:
+## Results include information below:
 * Url
 * App'ID
 * Score
